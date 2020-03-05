@@ -1,0 +1,411 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: helvetica-light;
+}
+
+h1
+{
+	font-weight: normal;
+	font-size: 36px;
+}
+h2
+{
+	font-weight: normal;
+	font-size: 28px;
+}
+h3
+{
+	font-family: arial;
+	font-size: 22px;
+}
+.P1
+{
+	font-size: 18px;
+}
+.P2
+{
+	font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) 
+{
+	h1
+	{
+		font-size: 30px;
+	}
+	h2
+	{
+		font-size: 26px;
+	}
+	h3
+	{
+		font-size: 22px;
+	}
+	.P1
+	{
+		font-size: 16px;
+	}
+	.P2
+	{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 768px) 
+{
+	h1
+	{
+		font-size: 24px;
+	}
+	h2
+	{
+		font-size: 20px;
+	}
+	h3
+	{
+		font-size: 20px;
+	}
+	.P1
+	{
+		font-size: 14px;
+	}
+	.P2
+	{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 375px) 
+{
+	h1
+	{
+		font-size: 20px;
+	}
+	h2
+	{
+		font-size: 20px;
+	}
+	h3
+	{
+		font-size: 18px;
+	}
+	.P1
+	{
+		font-size: 13px;
+	}
+	.P2
+	{
+		font-size: 12px;
+	}
+}
+
+/*--------------------------- HEADER 1 -----------------------*/
+
+.H1
+{
+  width: 100%;
+  position: fixed;
+
+}
+
+.H1-1
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.H1-1-1
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  min-width: 33.33%;
+  flex-grow: 1;
+  background-color: #2e6618;
+  color: white;
+}
+
+.E11
+{
+  margin: 0 5px;
+}
+.E12
+{
+  margin: 0 15px;
+}
+
+.I11
+{
+  height: 20px;
+}
+
+@media screen and (max-width: 1024px) 
+{
+  .H1
+  {
+    display: none;
+  }
+}
+
+/*--------------------------- HEADER 2 -----------------------*/
+
+.H2
+{
+	position: fixed;
+	height: 75px;
+	width: 100%;
+	margin-top: 35px;
+	padding: 0 20px;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: white;
+}
+
+.menu a
+{
+	text-decoration: none;
+	color: black;
+	padding: 0 10px;
+}
+
+.show-boton, .hide-boton
+{
+	display: none;
+	font-size: 30px;
+	cursor: pointer;
+	color: #707070;
+}
+.show-boton
+{
+	float: right;
+	padding-right: 50px;
+}
+.show-boton i
+{
+	padding-top: 25px;
+}
+
+.menu a:hover, .show-boton:hover, .hide-boton:hover
+{
+	color: #219e21;
+}
+
+#check
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: -111111111;
+}
+
+.I21
+{
+	position: relative;
+	height: 75%;
+	top: 10px;
+	left: 35px;
+}
+
+.P21
+{
+	position: fixed;
+	font-size: 21px;
+	top: 35px;
+	left: 120px;
+
+}
+
+.P22
+{
+	position: fixed;
+	font-size: 11px;
+	top: 70px;
+	left: 120px;
+}
+
+.Menu
+{
+	float: right;
+	padding-right: 5%;
+	padding-top: 15px;
+}
+
+@media screen and (max-width:1024px) 
+{
+  .H2
+  {
+    margin-top: 0;
+  }
+  .I11
+  {
+    top: 10px;
+  }
+  .P21
+  {
+    top: 0px;
+  }
+
+  .P22
+  {
+    top: 35px;
+  }
+  .show-boton,.hide-boton
+  {
+    display: block;
+  }
+  .menu
+  {
+  	position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: #195919;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+    margin: 0;
+  }
+  .menu a
+  {
+    display: block;
+    padding: 20px;
+    color: white;
+  }
+  .hide-boton
+  {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #check:checked ~ .menu
+  {
+    right: 0;
+  }
+} 
+
+
+/*------------------------------ FOOTER -------------------------*/
+
+.footer
+{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #363636;
+	color: white;
+}
+
+.footer-1
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-width: 300px;
+	flex-grow: 1;
+	padding: 3% 0;
+}
+
+.footer-2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-width: 300px;
+	flex-grow: 1;
+	padding: 3% 0;
+}
+
+.footer-3
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-width: 300px;
+	flex-grow: 1;
+	padding: 3% 0;
+}
+
+.footer-I1
+{
+	position: relative;
+	height: 60px;
+	left: 30px;
+	bottom: 2px;
+}
+
+.footer-I2
+{
+	height: 20px;
+}
+
+.footer-L
+{
+	list-style-type: none;
+}
+
+.footer-E1
+{
+	font-size: 21px;
+	position: relative;
+	bottom: 1px;
+}
+
+.footer-E2
+{
+	font-size: 11px;
+	position: relative;
+	top: 1px;
+}
+
+.footer-E3
+{
+	margin: 0 15px;
+}
+
+@media screen and (max-width: 767px)
+{
+	.footer-I1
+	{
+		left: 5px;
+	}
+
+	.footer-E1, .footer-E2
+	{
+		right: 10px;
+	}
+}
+
+@media screen and (max-width: 340px) 
+{
+	.footer-I1
+	{
+		position: relative;
+		top: 10px;
+	}
+	.footer-E1
+	{
+		display: none;
+	}
+	.footer-E2
+	{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
